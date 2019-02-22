@@ -61,7 +61,7 @@ public class MissionDemolition : MonoBehaviour
         mode = GameMode.playing;
     }
 
-void UpdateGUI ()
+    void UpdateGUI ()
         {
             uitLevel.text = "Level:	" + (level + 1) + "of	" + levelMax;
             uitShots.text = "Shots	Taken:	" + shotsTaken;
@@ -115,8 +115,9 @@ void UpdateGUI ()
 
         }
     }
+
     public static void ShotFired()
-    {                                                                                                                                                               //	d
+    {
         S.shotsTaken++;
     }
 }

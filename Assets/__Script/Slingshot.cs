@@ -19,7 +19,7 @@ public class Slingshot : MonoBehaviour {
     private Rigidbody projectileRigidbody;
 
     static public Vector3 LAUNCH_POS
-    {                                                                                                                                                               //	b
+    {
         get
         {
             if (S == null) return Vector3.zero;
@@ -63,7 +63,9 @@ public class Slingshot : MonoBehaviour {
     {
         if (!aimingMode)
             return;
+
         Vector3 mousePos2D = Input.mousePosition;
+
         mousePos2D.z = -Camera.main.transform.position.z;
         Vector3 mousePos3D = Camera.main.ScreenToWorldPoint(mousePos2D);
 
