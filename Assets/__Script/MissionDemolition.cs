@@ -4,7 +4,9 @@ using UnityEngine.UI;
 
 public enum GameMode
 {
-    idle, playing, levelEnd
+    idle,
+    playing,
+    levelEnd
 }
 
 public class MissionDemolition : MonoBehaviour
@@ -51,7 +53,7 @@ public class MissionDemolition : MonoBehaviour
         castle.transform.position = castlePos;
         shotsTaken = 0;
 
-        SwitchView("wShow	Both");
+        SwitchView("wShow Both");
         ProjectileLine.S.Clear();
 
         Goal.goalMet = false;
